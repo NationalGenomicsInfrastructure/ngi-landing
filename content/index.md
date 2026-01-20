@@ -53,45 +53,56 @@ NGI is one of the largest technical platforms at SciLifeLab. We provide access t
     target: _blank
     to: https://nuxt.com
     ---
-    - mHello
-    - jkkj
-
     #title
-    Built with [Nuxt](https://nuxt.com)
+    How do the services at NGI work?
 
     #description
-    Optimized by the most famous Vue framework. Docus gives you everything you need to build fast, performant, and SEO-friendly websites.
+    A typical project at NGI consists of six phases
+
+      :::::steps{level="3"}
+      ### Order
+
+      ### Planning meeting
+
+      ### Sample submission
+
+      ### Sequencing or genotyping
+
+      ### Bioinformatic processing
+
+      ### Data delivery
+      :::::
     ::::
 
     ::::u-page-card
     ---
     spotlight: true
     class: col-span-2
-    target: _blank
-    to: https://ui.nuxt.com
     ---
       :::::u-color-mode-image
       ---
-      height: 320
+      height: 474
       width: 859
-      alt: Beautiful visual powered by UI
+      alt: Flowcell inspection
       class: w-full h-80 object-cover rounded-lg
-      dark: /landing/dark/templates-ui-pro.webp
-      light: /landing/light/templates-ui-pro.webp
+      dark: /landing/flowcell.webp
+      light: /landing/flowcell.webp
       ---
       :::::
 
     #title
-    Powered by [Nuxt UI](https://ui.nuxt.com)
+    What is the National Genomics Infrastructure?
 
     #description
-    Beautiful out of the box, minimal by design but highly customizable. Docus leverages Nuxt UI to give you the best docs writing experience with zero boilerplate, just focus on your content.
+    We are a national Swedish research infrastructure and the largest facility within SciLifeLab. NGI provides access to technology for library preparations, sequencing, genotyping and associated bioinformatics support. The platform comprises two nodes: NGI Stockholm and NGI Uppsala; SNP\&SEQ Technology Platform, and Uppsala Genome Center (UGC). Please visit the About Us page to read more.
+
+    NGI services include a variety of different applications on a range of instruments. You can read more about our services by browsing the Applications, Technologies, or Bioinformatics tabs from the menu above.
     ::::
 
     ::::u-page-card
     ---
     spotlight: true
-    class: col-span-2
+    class: col-span-1
     target: _blank
     ---
       :::::tabs
@@ -142,40 +153,124 @@ NGI is one of the largest technical platforms at SciLifeLab. We provide access t
       :::::
 
     #title
-    Enhanced Markdown syntax by [Nuxt Content](https://content.nuxt.com)
+    How would editing the new website work?
 
     #description
-    The only thing you need to take care about is writing your content. Write your pages in Markdown and extend with MDC syntax to embed Nuxt UI or custom Vue components. Structure, routing, and rendering are handled for you.
+    The only thing you need to take care about is writing your content. Write your pages in Markdown and extend with MDC syntax to embed components. Structure and more complex features are handled for you.
+
+    You can use a Markdown editor like Notion or directly edit in the browser (You need to authenticate to GitHub). Changes would be committed to a development branch on GitHub and merged to the main branch when ready. Then the production website will reflect your changes.
     ::::
 
     ::::u-page-card
     ---
     spotlight: true
-    class: col-span-2 md:col-span-1
-    target: _blank
+    class: col-span-2
     ---
-      :::::div{.bg-elevated.rounded-lg.p-3.overflow-x-auto}
-      ```ts [app.config.ts]
-      export default defineAppConfig({
-      ui: {
-      colors: {
-      primary: 'green',
-      secondary: 'sky',
-      },
-      },
-      socials: {
-      x: 'https://x.com/nuxt_js',
-      nuxt: 'https://nuxt.com'
-      }
-      })
-      ```
-      :::::
+    #body
+    ## Is renewing our website reasonable?
 
-    #title
-    Customize with [Nuxt App Config](https://nuxt.com/docs/4.x/getting-started/configuration#app-configuration)
+    ### No
 
-    #description
-    Update colors, social links, header logos and component styles globally using the `app.config.ts`, no direct code modifications required.
+    - We have a working website and a full rebuild would require significant effort.
+    - Editors are (somewhat) familiar with our current interface.
+    - Wordpress powers about a quarter of all websites of the world!
+    - GitHub as American service may be affected by tensions between US and Europe.
+    - Migrating all existing content may introduce errors or lose information.
+    - Some integrations on the old site could be difficult to replicate on a new platform.
+
+    ### Yes
+
+    - KTH IT plans to retire the *Hulk* server. We need to change our current setup anyway.
+    - Wordpress sites get hacked frequently. Our backup strategy has never been put to test.
+    - Much of the functionality depends on Wordpress plugins od 3rd party authors. Risk for supply-chain attacks.
+    - Many features of our Wordpress website are factually not used. Maybe we can omit them to speed up transition?
+    - Copying and pasting from Word or Google Docs into Wordpress has left behind many unclosed or stray HTML-like tags that clutter our old website.
+    - Using Markdown makes it easier to write content and enforce consistent design across all pages.
+    - We could use a proper Continuous integration including tests.
+    - Static websites load faster.
+    - We could improve accessibility for LLMs via MCP. Users could ask their LLM model about NGI services.
+    - A new site would allow for a more modern look, improved accessibility, and better compliance with current web standards.
     ::::
   :::
+::
+
+::u-page-section
+  :::u-page-card
+    ::::accordion
+      :::::accordion-item
+      ---
+      icon: i-lucide-circle-help
+      label: What is NGI and where is it located?
+      ---
+      The National Genomics Infrastructure (NGI) is part of SciLifeLab and is Sweden's largest facility for genomics technologies. It has two nodes: NGI Stockholm and NGI Uppsala (SNP\&SEQ Technology Platform and Uppsala Genome Center).
+      :::::
+
+      :::::accordion-item
+      ---
+      icon: i-lucide-circle-help
+      label: How do NGI services work?
+      ---
+      You place an order through the NGI order portal. Registration is required. If multiple applications are needed (e.g. library prep plus genotyping), separate orders are required for each. A planning meeting is part of the process for new users or new methods. Samples are delivered, processed (sequencing/genotyping + bioinformatics), and data is delivered via the Data Delivery System (DDS).
+      :::::
+
+      :::::accordion-item
+      ---
+      icon: i-lucide-circle-help
+      label: What is a planning meeting?
+      ---
+      A planning meeting is optional but recommended for first-time users or when using new applications. In this meeting you discuss project scope: costs, timeline, sample requirements, and experimental approach. The meeting is free and non-binding.
+      :::::
+
+      :::::accordion-item
+      ---
+      icon: i-lucide-circle-help
+      label: How do I place an order?
+      ---
+      Choose the correct form in the order portal (sequencing or genotyping). Use "Request a meeting" if unsure. Provide project title, contact information, invoice details, plus as much project-specific information as possible. Mandatory fields are marked. You may save an incomplete order, but you can only submit when all required fields are filled. Once submitted, the order cannot be edited. Orders are viewable in "My orders".
+      :::::
+
+      :::::accordion-item
+      ---
+      icon: i-lucide-circle-help
+      label: What happens after I submit my order?
+      ---
+      NGI reviews your order for technical feasibility. Projects requiring more than 5% of NGI's total sequencing capacity undergo external review. If accepted, you'll receive a project ID and an agreement. No sample delivery is permitted until the agreement is signed.
+      :::::
+
+      :::::accordion-item
+      ---
+      icon: i-lucide-circle-help
+      label: How are agreements prepared?
+      ---
+      Agreements are based on order details and project coordinator communications. You'll be contacted for clarifications if needed. No action can proceed until the agreement is signed, and samples cannot be sent before that.
+      :::::
+
+      :::::accordion-item
+      ---
+      icon: i-lucide-circle-help
+      label: What are the sequencing and genotyping prices?
+      ---
+      Academic users are charged based on consumables cost. Reagents, consumables, etc., are costed using vendor prices. Commercial users are charged to cover all costs.
+      :::::
+
+      :::::accordion-item
+      ---
+      icon: i-lucide-circle-help
+      label: How is my personal account data handled?
+      ---
+      Data from registration will be used for contacting, administrative tasks, and invoicing. It is also reported, where required, to funding bodies. Data is stored up to 10 years after your last logged-in activity and processed per GDPR.
+      :::::
+
+      :::::accordion-item
+      ---
+      icon: i-lucide-circle-help
+      label: How should I acknowledge NGI in publications?
+      ---
+      You must acknowledge SciLifeLab, NGI, VR, and UPPMAX when using data from NGI. The exact wording is in the project report delivered with your data. Using NGI's logo in presentations and posters is encouraged. Acknowledgement demonstrates the contribution and is critical for infrastructure funding.
+      :::::
+    ::::
+  :::
+
+#title
+Frequently asked questions
 ::
