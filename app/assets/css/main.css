@@ -10,8 +10,8 @@
   
   /* NGI Logo configuration */
   --ngi-logo-height: 2.5em;
-  --ngi-logo-color-primary: #2E86EF;
-  --ngi-logo-color-secondary: #6c6c6c;
+  --ngi-logo-color-primary: var(--color-primary);
+  --ngi-logo-color-secondary: var(--color-gray-500);
   --ngi-logo-color-backlight: var(--color-gray-200);
   --ngi-logo-color-backdark: var(--color-red-500);
 }
