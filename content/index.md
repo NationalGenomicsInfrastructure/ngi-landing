@@ -102,6 +102,39 @@ NGI is one of the largest technical platforms at SciLifeLab. We provide access t
     ::::u-page-card
     ---
     spotlight: true
+    class: col-span-2
+    ---
+    #description
+
+    **No**
+
+    - We have a working website and a full rebuild would require significant effort.
+    - Editors are (somewhat) familiar with our current interface.
+    - Wordpress powers about a quarter of all websites of the world!
+    - GitHub as American service may be affected by tensions between US and Europe.
+    - Migrating all existing content may introduce errors or lose information.
+    - Some integrations on the old site could be difficult to replicate on a new platform.
+
+    **Yes**
+
+    - KTH IT plans to retire the *Hulk* server. We need to change our current setup anyway.
+    - Wordpress sites get hacked frequently. Our backup strategy has never been put to test.
+    - Much of the functionality depends on Wordpress plugins od 3rd party authors. Risk for supply-chain attacks.
+    - Many features of our Wordpress website are factually not used. Maybe we can omit them to speed up transition?
+    - Copying and pasting from Word or Google Docs into Wordpress has left behind many unclosed or stray HTML-like tags that clutter our old website.
+    - Using Markdown makes it easier to write content and enforce consistent design across all pages.
+    - We could use a proper Continuous integration including tests.
+    - Static websites load faster.
+    - We could improve accessibility for LLMs via MCP. Users could ask their LLM model about NGI services, similiar to [Illumina's Dragen docs](https://help.dragen.illumina.com/product-guide/dragen-v4.4/bcl-conversion).
+    - A new site would allow for a more modern look, improved accessibility, and better compliance with current web standards.
+
+    #title
+    Is renewing our website reasonable?
+    ::::
+
+    ::::u-page-card
+    ---
+    spotlight: true
     class: col-span-1
     target: _blank
     ---
@@ -159,37 +192,6 @@ NGI is one of the largest technical platforms at SciLifeLab. We provide access t
     The only thing you need to take care about is writing your content. Write your pages in Markdown and extend with MDC syntax to embed components. Structure and more complex features are handled for you.
 
     You can use a Markdown editor like Notion or directly edit in the browser (You need to authenticate to GitHub). Changes would be committed to a development branch on GitHub and merged to the main branch when ready. Then the production website will reflect your changes.
-    ::::
-
-    ::::u-page-card
-    ---
-    spotlight: true
-    class: col-span-2
-    ---
-    #body
-    ## Is renewing our website reasonable?
-
-    ### No
-
-    - We have a working website and a full rebuild would require significant effort.
-    - Editors are (somewhat) familiar with our current interface.
-    - Wordpress powers about a quarter of all websites of the world!
-    - GitHub as American service may be affected by tensions between US and Europe.
-    - Migrating all existing content may introduce errors or lose information.
-    - Some integrations on the old site could be difficult to replicate on a new platform.
-
-    ### Yes
-
-    - KTH IT plans to retire the *Hulk* server. We need to change our current setup anyway.
-    - Wordpress sites get hacked frequently. Our backup strategy has never been put to test.
-    - Much of the functionality depends on Wordpress plugins od 3rd party authors. Risk for supply-chain attacks.
-    - Many features of our Wordpress website are factually not used. Maybe we can omit them to speed up transition?
-    - Copying and pasting from Word or Google Docs into Wordpress has left behind many unclosed or stray HTML-like tags that clutter our old website.
-    - Using Markdown makes it easier to write content and enforce consistent design across all pages.
-    - We could use a proper Continuous integration including tests.
-    - Static websites load faster.
-    - We could improve accessibility for LLMs via MCP. Users could ask their LLM model about NGI services.
-    - A new site would allow for a more modern look, improved accessibility, and better compliance with current web standards.
     ::::
   :::
 ::
