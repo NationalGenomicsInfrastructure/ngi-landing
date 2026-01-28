@@ -6,7 +6,7 @@ seo:
 
 ::u-page-hero
 #title
-Join us on a base odyssey...
+Join us now!
 
 #description
 NGI is one of the largest technical platforms at SciLifeLab. We provide access to technology for sequencing, genotyping and associated bioinformatics support to researchers based in Sweden.
@@ -94,9 +94,9 @@ NGI is one of the largest technical platforms at SciLifeLab. We provide access t
     What is the National Genomics Infrastructure?
 
     #description
-    We are a national Swedish research infrastructure and the largest facility within SciLifeLab. NGI provides access to technology for library preparations, sequencing, genotyping and associated bioinformatics support. The platform comprises two nodes: NGI Stockholm and NGI Uppsala; SNP\&SEQ Technology Platform, and Uppsala Genome Center (UGC). Please visit the About Us page to read more.
+    We are Sweden's national genomics research infrastructure and the largest facility within SciLifeLab. NGI provides access to cutting-edge technologies for library preparation, sequencing, genotyping, and associated bioinformatics support. The platform operates through two nodes: NGI Stockholm (SNP&SEQ Technology Platform) and NGI Uppsala (Uppsala Genome Center).
 
-    NGI services include a variety of different applications on a range of instruments. You can read more about our services by browsing the Applications, Technologies, or Bioinformatics tabs from the menu above.
+    Our services encompass a broad range of genomics applications across multiple instrument platforms. Explore our offerings through the Applications, Technologies, or Bioinformatics sections in the menu above.
     ::::
 
     ::::u-page-card
@@ -105,7 +105,6 @@ NGI is one of the largest technical platforms at SciLifeLab. We provide access t
     class: col-span-2
     ---
     #description
-
     **No**
 
     - We have a working website and a full rebuild would require significant effort.
